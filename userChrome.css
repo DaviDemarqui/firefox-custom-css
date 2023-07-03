@@ -1,0 +1,20 @@
+.tab-background {
+    border-radius: 2px 0px 2px 0px !important;
+    margin-bottom: 0px !important;
+  }
+ 
+  .tabbrowser-tab[selected=true] .tab-background {
+    border-top: 2px solid rgb(47, 144, 255) !important;
+  }
+  .tabbrowser-tab:not([selected=true]):not([multiselected=true]) .tab-background {
+    background-color: color-mix(in srgb, currentColor 5%, transparent);
+  }
+ 
+  menupopup>menu,
+  menupopup>menuitem {
+    padding-block: 2px !important;
+  }
+ 
+  :root {
+    --arrowpanel-menuitem-padding: 2px !important;
+  }
