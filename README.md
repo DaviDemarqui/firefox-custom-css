@@ -1,5 +1,5 @@
 
-# Título do Projeto
+# Firefox Old Styled CSS
 
 This userChrome.css is basically a cocktail of my favorite things in Firefox since version 60.
 
