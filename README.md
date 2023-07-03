@@ -15,7 +15,7 @@ In your firefox profile folder create a directory called chrome and paste the us
 
 ## Screenshots
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![App Screenshot](print.png)
 
 # firefox-old-chrome-css
 A userChrome with a css similar to Firefox 60 but without some annoying details.
