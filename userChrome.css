@@ -1,20 +1,54 @@
+/* ========== GENERAL TAB STYLES ========== */
 .tab-background {
-    border-radius: 2px 0px 2px 0px !important;
-    margin-bottom: 0px !important;
-  }
- 
-  .tabbrowser-tab[selected=true] .tab-background {
-    border-top: 2px solid rgb(47, 144, 255) !important;
-  }
-  .tabbrowser-tab:not([selected=true]):not([multiselected=true]) .tab-background {
-    background-color: color-mix(in srgb, currentColor 5%, transparent);
-  }
- 
-  menupopup>menu,
-  menupopup>menuitem {
-    padding-block: 2px !important;
-  }
- 
-  :root {
-    --arrowpanel-menuitem-padding: 2px !important;
-  }
+  border-radius: 2px 0px 2px 0px !important;
+  margin-bottom: 0px !important;
+  background-color: color-mix(in srgb, currentColor 5%, transparent);
+  border-top: 2px solid rgba(255, 255, 255, 0.1) !important; /* default border for unselected tabs */
+}
+
+/* === Selected tab styles with unique cyberpunk colors === */
+.tabbrowser-tab[selected="true"] .tab-background {
+  border-top: 3px solid var(--selected-tab-border, #0ff) !important;
+}
+
+/* === Per-tab neon colors on selection === */
+.tabbrowser-tab:nth-of-type(1)[selected="true"] {
+  --selected-tab-border: #ff00c3; /* Neon Pink */
+}
+.tabbrowser-tab:nth-of-type(2)[selected="true"] {
+  --selected-tab-border: #00ffff; /* Electric Cyan */
+}
+.tabbrowser-tab:nth-of-type(3)[selected="true"] {
+  --selected-tab-border: #ae00ff; /* Deep Purple */
+}
+.tabbrowser-tab:nth-of-type(4)[selected="true"] {
+  --selected-tab-border: #09ff00; /* Toxic Green */
+}
+.tabbrowser-tab:nth-of-type(5)[selected="true"] {
+  --selected-tab-border: #ff8800; /* Neon Orange */
+}
+.tabbrowser-tab:nth-of-type(6)[selected="true"] {
+  --selected-tab-border: #ff0037; /* Laser Red */
+}
+.tabbrowser-tab:nth-of-type(7)[selected="true"] {
+  --selected-tab-border: #d9ff00; /* Volt Yellow */
+}
+.tabbrowser-tab:nth-of-type(8)[selected="true"] {
+  --selected-tab-border: #ff4444; /* Hot Red */
+}
+.tabbrowser-tab:nth-of-type(9)[selected="true"] {
+  --selected-tab-border: #aaff00; /* Alien Green */
+}
+.tabbrowser-tab:nth-of-type(10)[selected="true"] {
+  --selected-tab-border: #ff5100; /* Molten Orange */
+}
+
+/* ========== MENU STYLING ========== */
+menupopup > menu,
+menupopup > menuitem {
+  padding-block: 2px !important;
+}
+
+:root {
+  --arrowpanel-menuitem-padding: 2px !important;
+}
