@@ -1,5 +1,3 @@
-# Documentation
-
 ## Overview
 This is my Firefox custom theme that gives your browser tabs a cyberpunk aesthetic with neon colored borders for selected tabs. Each tab cycles through a vibrant cyberpunk color palette, creating a unique and visually striking browsing experience.
 
