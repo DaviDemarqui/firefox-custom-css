@@ -11,37 +11,46 @@
   border-top: 3px solid var(--selected-tab-border, #0ff) !important;
 }
 
-/* === Per-tab neon colors on selection === */
-.tabbrowser-tab:nth-of-type(1)[selected="true"] {
-  --selected-tab-border: #ff00c3; /* Neon Pink */
+/* === Random cyberpunk colors for infinite tabs === */
+/* Base cyberpunk palette */
+:root {
+  --cyberpunk-colors: 
+    #ff00c3, /* Neon Pink */
+    #00ffff, /* Electric Cyan */
+    #ae00ff, /* Deep Purple */
+    #09ff00, /* Toxic Green */
+    #ff8800, /* Neon Orange */
+    #ff0037, /* Laser Red */
+    #d9ff00, /* Volt Yellow */
+    #ff4444, /* Hot Red */
+    #aaff00, /* Alien Green */
+    #ff5100, /* Molten Orange */
+    #01cdfe, /* Digital Blue */
+    #05ffa1, /* Synthwave Green */
+    #b967ff, /* Ultraviolet */
+    #fffb96  /* Electric Yellow */
 }
-.tabbrowser-tab:nth-of-type(2)[selected="true"] {
-  --selected-tab-border: #00ffff; /* Electric Cyan */
+
+/* Apply a cyclic pattern for tabs beyond the explicit ones */
+.tabbrowser-tab[selected="true"] {
+  --selected-tab-border: #0ff; /* Default Electric Blue fallback */
 }
-.tabbrowser-tab:nth-of-type(3)[selected="true"] {
-  --selected-tab-border: #ae00ff; /* Deep Purple */
-}
-.tabbrowser-tab:nth-of-type(4)[selected="true"] {
-  --selected-tab-border: #09ff00; /* Toxic Green */
-}
-.tabbrowser-tab:nth-of-type(5)[selected="true"] {
-  --selected-tab-border: #ff8800; /* Neon Orange */
-}
-.tabbrowser-tab:nth-of-type(6)[selected="true"] {
-  --selected-tab-border: #ff0037; /* Laser Red */
-}
-.tabbrowser-tab:nth-of-type(7)[selected="true"] {
-  --selected-tab-border: #d9ff00; /* Volt Yellow */
-}
-.tabbrowser-tab:nth-of-type(8)[selected="true"] {
-  --selected-tab-border: #ff4444; /* Hot Red */
-}
-.tabbrowser-tab:nth-of-type(9)[selected="true"] {
-  --selected-tab-border: #aaff00; /* Alien Green */
-}
-.tabbrowser-tab:nth-of-type(10)[selected="true"] {
-  --selected-tab-border: #ff5100; /* Molten Orange */
-}
+
+/* First 10 tabs get specific colors */
+.tabbrowser-tab:nth-of-type(14n+1)[selected="true"] { --selected-tab-border: #ff00c3; }
+.tabbrowser-tab:nth-of-type(14n+2)[selected="true"] { --selected-tab-border: #00ffff; }
+.tabbrowser-tab:nth-of-type(14n+3)[selected="true"] { --selected-tab-border: #ae00ff; }
+.tabbrowser-tab:nth-of-type(14n+4)[selected="true"] { --selected-tab-border: #09ff00; }
+.tabbrowser-tab:nth-of-type(14n+5)[selected="true"] { --selected-tab-border: #ff8800; }
+.tabbrowser-tab:nth-of-type(14n+6)[selected="true"] { --selected-tab-border: #ff0037; }
+.tabbrowser-tab:nth-of-type(14n+7)[selected="true"] { --selected-tab-border: #d9ff00; }
+.tabbrowser-tab:nth-of-type(14n+8)[selected="true"] { --selected-tab-border: #ff4444; }
+.tabbrowser-tab:nth-of-type(14n+9)[selected="true"] { --selected-tab-border: #aaff00; }
+.tabbrowser-tab:nth-of-type(14n+10)[selected="true"] { --selected-tab-border: #ff5100; }
+.tabbrowser-tab:nth-of-type(14n+11)[selected="true"] { --selected-tab-border: #01cdfe; }
+.tabbrowser-tab:nth-of-type(14n+12)[selected="true"] { --selected-tab-border: #05ffa1; }
+.tabbrowser-tab:nth-of-type(14n+13)[selected="true"] { --selected-tab-border: #b967ff; }
+.tabbrowser-tab:nth-of-type(14n+14)[selected="true"] { --selected-tab-border: #fffb96; }
 
 /* ========== MENU STYLING ========== */
 menupopup > menu,
